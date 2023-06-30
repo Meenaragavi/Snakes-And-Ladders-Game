@@ -1,11 +1,15 @@
 {
+    "homepage":"http://meenaragavi.github.io/Snakes-And-Ladders-Game",
     "name": "snake-and-ladder",
     "version": "1.0.0",
     "description": "",
     "main": "game.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js"
+        "start": "node server.js",
+        "predeploy":"npm run build",
+        "deploy":"gh-pages -d build",
+        "build":"react-scripts build"
     },
     "author": "Changing Majors",
     "license": "ISC",
